@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.5'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'io.freefair.lombok' version '6.5.1'
 }
 
 group = 'project'
@@ -12,17 +11,16 @@ java {
     sourceCompatibility = '17'
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "https://repo.spring.io/snapshot" }
+}
+
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
-}
-
-repositories {
-    mavenCentral()
-    jcenter() // Add jcenter repository
-    maven { url "https://repo.spring.io/milestone" } // Spring milestone repository
-    maven { url "https://repo.spring.io/snapshot" } // Spring snapshot repository
 }
 
 dependencies {
@@ -57,20 +55,3 @@ dependencyManagement {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
-allprojects {
-    tasks.withType(JavaCompile) {
-        options.encoding = 'UTF-8'
-    }
-}
-
-gradle.projectsEvaluated {
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xlint:deprecation"
-    }
-}
-
-// Removing or commenting out the problematic task
-// tasks.withType(GenerateLombokConfig) {
-//     options.encoding = 'UTF-8'
-// }
