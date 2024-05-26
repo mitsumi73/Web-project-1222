@@ -1,11 +1,291 @@
 <!DOCTYPE html>
-<html lang="en-KO">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
-    <style></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <style>
+        body {
+            display: block;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            min-height: 100vh;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .member-list-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f7f7f7;
+            padding: 1px 0;
+            width: 100%;
+            flex: 1;
+        }
+
+        @media (max-width: 991px) {
+            .member-list-section {
+                max-width: 100%;
+            }
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            font: 600 50px/150% Inter, sans-serif;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.5px;
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid var(--body-background-color);
+        }
+
+        @media (max-width: 991px) {
+            .header {
+                font-size: 40px;
+                padding: 0 20px;
+            }
+        }
+
+        .team-container {
+            margin-top: 16px;
+            padding: 0 20px;
+            max-width: 1362px;
+            width: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .team-container {
+                max-width: 100%;
+            }
+        }
+
+        .team-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .team-row {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+        }
+
+        .member-card {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 16px 0 16px 16px;
+            width: 52%;
+        }
+
+        @media (max-width: 991px) {
+            .member-card {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+
+        .member-connect {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .member-connect {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+        }
+
+        .image-column {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        @media (max-width: 991px) {
+            .image-column {
+                width: 100%;
+            }
+        }
+
+        .info-column {
+            display: flex;
+            flex-direction: column;
+            width: 76%;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .info-column {
+                width: 100%;
+            }
+        }
+
+        .profile-pic {
+            width: 100px;
+            aspect-ratio: 0.77;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 991px) {
+            .profile-pic {
+                margin-top: 32px;
+            }
+        }
+
+        .member-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3px 0;
+        }
+
+        .member-name {
+            font-family: Inter, sans-serif;
+            color: #000;
+            font-weight: 700;
+            line-height: 150%;
+            font-size: 20px;
+        }
+
+        .member-designation {
+            font-family: Inter, sans-serif;
+            color: #828282;
+            font-weight: 400;
+            line-height: 150%;
+            font-size: 18px;
+        }
+
+        .interests-title {
+            font-family: Inter, sans-serif;
+            color: black;
+            margin-top: 19px;
+            line-height: 150%;
+        }
+
+        .interests-tags {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+            padding-right: 12px;
+        }
+
+        .interest-tag {
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            width: auto;
+            height: auto;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-
+<div class="container">
+    <header class="header">Team member</header>
+    <section class="member-list-section">
+        <div class="team-container">
+            <div class="team-row">
+                <article class="member-card">
+                    <div class="member-connect">
+                        <div class="image-column">
+                            <img class="profile-pic"
+                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9c183de96c42d81e53a6d2982062537bdc27382cb14801669f62acd0792caf4?apiKey=ce41a83eb0104d819bb8bc791b2e696f&"
+                                 alt="Charles's profile picture">
+                        </div>
+                        <div class="info-column">
+                            <div class="member-details">
+                                <strong class="member-name">VO QUOC ANH (보꾸옥안)</strong>
+                                <span class="member-designation">2018년 경기대학교 어학연수</span>
+                                <span class="member-designation">2021년 경기대학교 컴퓨터공학전공 학사</span>
+                                <span class="member-designation">2023년 한국기술정보학회 우수논문상 동상</span>
+                                <span class="interests-title">관심분야:</span>
+                                <div class="interests-tags">
+                                    <span class="interest-tag">AI</span>
+                                    <span class="interest-tag">UI/UX Design</span>
+                                    <span class="interest-tag">Front-End Design</span>
+                                    <span class="interest-tag">Spring Boot</span>
+                                    <span class="interest-tag">Software Tester</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-row">
+                <article class="member-card">
+                    <div class="member-connect">
+                        <div class="image-column">
+                            <img class="profile-pic"
+                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9c183de96c42d81e53a6d2982062537bdc27382cb14801669f62acd0792caf4?apiKey=ce41a83eb0104d819bb8bc791b2e696f&"
+                                 alt="Charles's profile picture">
+                        </div>
+                        <div class="info-column">
+                            <div class="member-details">
+                                <strong class="member-name">문준서</strong>
+                                <span class="member-designation">2021년 경기대학교 컴퓨터공학전공 학사</span>
+                                <span class="interests-title">관심분야:</span>
+                                <div class="interests-tags">
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="team-row">
+                <article class="member-card">
+                    <div class="member-connect">
+                        <div class="image-column">
+                            <img class="profile-pic"
+                                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/f9c183de96c42d81e53a6d2982062537bdc27382cb14801669f62acd0792caf4?apiKey=ce41a83eb0104d819bb8bc791b2e696f&"
+                                 alt="Charles's profile picture">
+                        </div>
+                        <div class="info-column">
+                            <div class="member-details">
+                                <strong class="member-name">박진성</strong>
+                                <span class="member-designation">2021년 경기대학교 컴퓨터공학전공 학사</span>
+                                <span class="interests-title">관심분야:</span>
+                                <div class="interests-tags">
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                    <span class="interest-tag"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer class="header">ProcessLogEvent</footer>
+</div>
 </body>
 </html>
