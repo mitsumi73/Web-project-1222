@@ -2,7 +2,7 @@
 
 <h2 align="center">웹프로그래밍 (DD725_1222) 정경용 교수님</h2>
 
-<h2 align="center">보꾸옥안 * - 준문서 - 박진성</h2>
+<h2 align="center">보꾸옥안 - 준문서 - 박진성</h2>
 
 <h2>개발 환경</h2>
 <img src="webprograming.svg" alt="개발 환경" style="align-items: center; justify-content: center">
