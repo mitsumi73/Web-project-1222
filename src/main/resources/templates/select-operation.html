@@ -8,7 +8,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
             display: flex;
@@ -22,10 +21,8 @@
             align-items: center;
             flex: 1;
             width: 100%;
-            background-color: #fff;
+            background-color: var(--body-color);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            padding: 20px;
         }
         h1, h2 {
             color: #333;
@@ -87,6 +84,17 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        .sort-buttons {
+            margin-bottom: 20px;
+        }
+        .sort-buttons button {
+            margin: 0 10px;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -97,6 +105,10 @@
     <main>
         <h2>Select an Event</h2>
         <input type="text" id="eventSearch" placeholder="Search for events..">
+        <div class="sort-buttons">
+            <button id="sortAsc">Sort A-Z</button>
+            <button id="sortDesc">Sort Z-A</button>
+        </div>
         <ul class="event-list" id="eventList">
             <li th:each="eventName, iterStat : ${eventNames}">
                 <span class="index" th:text="${iterStat.index + 1}">1</span>
@@ -118,6 +130,37 @@
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
+
+        // Sort functions
+        function sortListAsc() {
+            var list = $("#eventList");
+            var items = list.children("li").get();
+            items.sort(function(a, b) {
+                var keyA = $(a).find("a").text().toLowerCase();
+                var keyB = $(b).find("a").text().toLowerCase();
+                return (keyA < keyB) ? -1 : (keyA > keyB) ? 1 : 0;
+            });
+            $.each(items, function(i, li) {
+                list.append(li);
+            });
+        }
+
+        function sortListDesc() {
+            var list = $("#eventList");
+            var items = list.children("li").get();
+            items.sort(function(a, b) {
+                var keyA = $(a).find("a").text().toLowerCase();
+                var keyB = $(b).find("a").text().toLowerCase();
+                return (keyA > keyB) ? -1 : (keyA < keyB) ? 1 : 0;
+            });
+            $.each(items, function(i, li) {
+                list.append(li);
+            });
+        }
+
+        // Attach sort functions to buttons
+        $("#sortAsc").on("click", sortListAsc);
+        $("#sortDesc").on("click", sortListDesc);
     });
 </script>
 </body>
