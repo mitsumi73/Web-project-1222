@@ -147,6 +147,14 @@
             border-radius: 8px;
         }
 
+        .carousel-image {
+            display: none;
+        }
+
+        .carousel-image.active {
+            display: block;
+        }
+
         .post-section {
             display: flex;
             justify-content: space-between;
@@ -162,7 +170,7 @@
         .post {
             background-color: #dc5b5b;
             border-radius: 20px;
-            padding: 16px;
+            padding: 20px;
             display: flex;
             align-items: center;
             gap: 16px;
@@ -345,7 +353,9 @@
     <section class="image-section">
         <div class="image-container">
             <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbFYDXv%2Fbtqy1gu32ui%2FuPQgLTrTAvKGD9HQvuJf81%2Fimg.png"
-                 alt="Description of image" loading="lazy"/>
+                 alt="Description of image 1" loading="lazy" class="carousel-image active"/>
+            <img src="images/Screenshot 2024-05-27 202444.png" alt="Description of image 2" loading="lazy" class="carousel-image"/>
+            <img src="images/Screenshot 2024-05-27 202545.png" alt="Description of image 3" loading="lazy" class="carousel-image"/>
         </div>
     </section>
 </main>
@@ -400,6 +410,7 @@
             </div>
         </div>
     </article>
+
 </section>
 <br>
 <div class="intro-text">
@@ -443,6 +454,7 @@
             </p>
         </div>
     </article>
+    <!-- ===== Video ===== -->
     <div class="image-column">
         <iframe
                 src="https://www.youtube-nocookie.com/embed/znzPX8EypHk?enablejsapi=1&amp;rel=0"
@@ -481,12 +493,13 @@
             });
     }
 
+    // ===== FAQ Answer ===== //
     $(document).ready(function () {
         $('.faq-section li').click(function () {
             $(this).toggleClass('open');
             $(this).find('.answer').slideToggle();
         });
-
+        // ===== Like icon  ===== //
         $('.like-icon').click(function () {
             var likeCountElement = $(this).siblings('.like-count');
             var likeCount = parseInt(likeCountElement.text());
@@ -502,6 +515,18 @@
             }
             likeCountElement.text(likeCount + ' likes');
         });
+
+        // ===== Change image every 3 seconds ===== //
+        let currentIndex = 0;
+        const images = $('.carousel-image');
+        const totalImages = images.length;
+
+        function showNextImage() {
+            images.eq(currentIndex).removeClass('active');
+            currentIndex = (currentIndex + 1) % totalImages;
+            images.eq(currentIndex).addClass('active');
+        }
+        setInterval(showNextImage, 3000);
     });
 </script>
 </body>
