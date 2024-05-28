@@ -245,6 +245,7 @@ header, footer {
 <p align="center"> Main Page(home.html) & Home Page(index.html)</p>
 
 ![Main&Home-1](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-1.png)
+![DarkHome](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Screenshot%202024-05-29%20055748.png)
 ![Main&Home-2](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Home-2.png)
 
 <p align="center">Upload File Page(upload.html)</p>
