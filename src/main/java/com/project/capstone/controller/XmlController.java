@@ -1,6 +1,5 @@
 package com.project.capstone.controller;
 
-import org.deckfour.xes.in.XParserRegistry;
 import org.deckfour.xes.model.XLog;
 import org.deckfour.xes.model.XAttribute;
 import org.deckfour.xes.model.XEvent;
