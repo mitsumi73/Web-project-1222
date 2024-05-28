@@ -256,10 +256,10 @@ header, footer {
 ![Team](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Team.png)
 
 <p align="center">EventLog Page(select-operation.html) & Data View Page (data-view.html)</p>
-<p align="center">
-  <img src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png" alt="EventLog" width="400" height="420">
-  <img src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png" alt="Select" width="400" height="450">
-</p>
+
+![Event](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png)
+![Select](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png)
+
 
 # 프로잭트 실행 안내
 
