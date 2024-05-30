@@ -24,7 +24,7 @@
 
 # 개발 환경
 <p align="center"> 
-<img src="webprograming.svg" alt="개발 환경">
+<img src="https://github.com/mitsumi73/Web-project-1222/raw/main/webprograming.svg" alt="개발 환경">
 </p>
 
 # 프로젝트에 대해 간단히 설명
