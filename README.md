@@ -141,7 +141,7 @@ header, footer {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
-
+        
         // Sort functions
         function sortListAsc() {
             var list = $("#eventList");
@@ -244,22 +244,23 @@ header, footer {
 
 <p align="center"> Main Page(home.html) & Home Page(index.html)</p>
 
-![Main&Home-1](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-1.png)
-![DarkHome](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Screenshot%202024-05-29%20055748.png)
-![Main&Home-2](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Home-2.png)
+<img alt="Main&Home-1" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-1.png"/>
+
+<img alt="Main&Home-2" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-2.png"/>
 
 <p align="center">Upload File Page(upload.html)</p>
 
-![upload](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/upload.png)
+<img alt="upload" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/upload.png"/>
 
 <p align="center">Team Member Page(about.html)</p>
 
-![Team](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Team.png)
+<img alt="Team" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Team.png"/>
 
 <p align="center">EventLog Page(select-operation.html) & Data View Page (data-view.html)</p>
 
-![Event](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png)
-![Select](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png)
+<img alt="Event" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png"/>
+
+<img alt="Select" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png"/>
 
 
 # 프로잭트 실행 안내

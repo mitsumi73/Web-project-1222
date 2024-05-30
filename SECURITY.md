@@ -1,5 +1,5 @@
 # Security Policy
-![Security](https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/Screenshot%202024-05-29%20061856.png)
+![Security](https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Screenshot%202024-05-29%20061856.png)
 ## Supported Versions
 
 Use this section to tell people about which versions of your project are
