@@ -1,4 +1,4 @@
-<h1 align="center">ProcessLogEvent</h1>
+<h1 align="center">ProcessLogEvent: 이벤트 로깅 및 데이터 시각화</h1>
 
 <h2 align="center">웹프로그래밍 (DD725_1222) 정경용 교수님</h2>
 
@@ -27,7 +27,7 @@
 <img src="webprograming.svg" alt="개발 환경">
 </p>
 
-# 프로젝트에 대한 간단히 설명
+# 프로젝트에 대해 간단히 설명
 이 프로젝트는 "ProcessLogEvent"라는 이름의 웹 애플리케이션입니다. 이 애플리케이션은 이벤트 로깅 및 데이터 시각화 기능을 제공합니다. 주요 기능은 다음과 같습니다:
 
 + 홈페이지 (home.html):
@@ -41,15 +41,15 @@
   - 드래그 앤 드롭 방식으로 파일 업로드를 지원.
   - 업로드된 파일은 이벤트 로깅에 사용됨.
 
-+ 데이터 뷰 (data-view.html):
-  - 글로벌 트레이스 속성, 글로벌 이벤트 속성, 분류자, 이벤트 속성 등을 테이블 형태로 시각화.
-  - 각 테이블에 대한 검색 기능 제공.
-  - 테이블 행에 마우스를 올리면 강조 표시.
-
 + 운영 선택 (select-operation.html):
   - 사용자에게 선택 가능한 이벤트 목록을 제공.
   - 이벤트 목록을 검색하거나 정렬할 수 있는 기능 제공.
   - 검색 입력란과 정렬 버튼을 통해 목록을 필터링하고 정렬 가능.
+
++ 데이터 뷰 (data-view.html):
+  - 글로벌 트레이스 속성, 글로벌 이벤트 속성, 분류자, 이벤트 속성 등을 테이블 형태로 시각화.
+  - 각 테이블에 대한 검색 기능 제공.
+  - 테이블 행에 마우스를 올리면 강조 표시.
 
 + 팀 멤버 소개 (about.html):
   - 팀 멤버들의 프로필을 카드 형태로 소개.
@@ -246,23 +246,25 @@ header, footer {
 
 <img alt="Main&Home-1" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-1.png"/>
 
-<img alt="Main&home-3" src="https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/home-3.png"/>
-
 <img alt="Main&Home-2" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-2.png"/>
+
+<img alt="Main&home-3" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/home-3.png"/>
 
 <p align="center">Upload File Page(upload.html)</p>
 
 <img alt="upload" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/upload.png"/>
 
+<p align="center">운영선택 Page(select-operation.html) </p>
+
+<img alt="Event" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png"/>
+
+<p align="center">Data View Page (data-view.html)</p>
+<img alt="Select" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png"/>
+
 <p align="center">Team Member Page(about.html)</p>
 
 <img alt="Team" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Team.png"/>
 
-<p align="center">EventLog Page(select-operation.html) & Data View Page (data-view.html)</p>
-
-<img alt="Event" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/EventLog.png"/>
-
-<img alt="Select" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Select.png"/>
 
 
 # 프로잭트 실행 안내
