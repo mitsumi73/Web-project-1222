@@ -246,6 +246,8 @@ header, footer {
 
 <img alt="Main&Home-1" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-1.png"/>
 
+<img alt="Main&home-3" src="https://github.com/mitsumi73/Web-project-1222/blob/main/src/main/resources/static/images/home-3.png"/>
+
 <img alt="Main&Home-2" src="https://github.com/mitsumi73/Web-project-1222/raw/main/src/main/resources/static/images/Home-2.png"/>
 
 <p align="center">Upload File Page(upload.html)</p>
